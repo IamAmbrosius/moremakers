@@ -134,7 +134,7 @@ position: absolute; width: 100%; height: 100%; background-color: grey; opacity: 
 }
 
 .main-content-inside {
-    position: relative; margin-top: 10%;  background: #0A2342; padding: 20px; width: 98%; border-radius: 20px; box-shadow: 2px 2px orange; box-sizing: border-box;
+    position: relative; margin: 0px auto; margin-top: 10%;  background: #0A2342; padding: 20px; width: 95%; border-radius: 20px; box-shadow: 2px 2px orange; box-sizing: border-box;
 }
 
 .main-content-inside h2 {
@@ -154,7 +154,7 @@ position: absolute; width: 100%; height: 100%; background-color: grey; opacity: 
 }
 
 .main-contact-us  {
-    position: relative; background-color: orange; padding: 30px; margin: 20px 0;  border-radius: 15px; border-top-left-radius: 15px;  width: 98%; box-sizing: border-box;}
+    position: relative; background-color: orange; padding: 30px; margin: 0px auto;  border-radius: 15px; border-top-left-radius: 15px;  width: 95%; box-sizing: border-box; margin-top: 20px;}
 
 .main-contact-us hr   {
     position: relative; height: 5px; width: 60px; background: #0A2342; margin-bottom: 20px;
