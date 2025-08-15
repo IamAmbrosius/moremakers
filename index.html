@@ -1,27 +1,3 @@
-<?php
-$success = false;
-$error = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-  
-
-    // Email details
-    $to = "info@moremakersadvisory.co"; 
-    $subject = "New Subscription Form Submission";
-    $body = "Name: $name\nEmail: $email\nPhone: $phone";
-    $headers = "From: $email";
-
-    // Send email
-    if (mail($to, $subject, $body, $headers)) {
-        $success = true;
-    } else {
-        $error = "❌ There was a problem sending your message.";
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -116,12 +92,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
      <div class="main-content-inside">
 
-    <h2>Data</h2>
-    <h2>Analytics</h2>
+    <h2>Research</h2>
+    <h2>and Analytics</h2>
     <h2>Services</h2>
 
 
-    <p>We deliver professional data analytics services, unlocking insights for informed decision-making and business growth</p>
+    <p>We deliver research and analytics services, unlocking insights for informed decision-making and business growth.</p>
 
     <hr>
 
@@ -147,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div id="wrapper">
 
-    <a href="https://wa.me/+264814861567" target="blank">
+  <a href="https://wa.me/+264814861567" target="blank">
         
     
    <div class="whatsapp">
@@ -156,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div id="about-us">
 
-   <a href="#wrapper" class="smoothscroll">  
+  <a href="#wrapper" class="smoothscroll">  
   <div class="scroll">
               
               <i class="fa fa-arrow-up" aria-hidden="true"></i>
@@ -191,6 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <li>Healthcare</li>
     <li>Telecommunications</li>
     <li>Automotive</li>
+    <li>Financial Sector</li>
     <li>Public Sector</li>
 </ul>
 
@@ -230,7 +207,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <li>Customer Satisfaction Index – National and sectoral customer satisfaction rankings.</li>
       <li>Voice of the Customer (VoC) – Real-time feedback tools for service improvement.</li>
       <li>Customer Service Benchmarking Index – Compare service performance regionally.</li>
-      <li>Annual CEO & Managing Director Survey – Insights from business leaders on the economy.</li>
+      <li>Namibian Executive Outlook Survey (NEOS) – Insights from business leaders on the economy.</li>
     </ul>
               </div>
             </div>
@@ -368,7 +345,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="get-in-touch">
       <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+264 814861567">+264 814861567</a></p>
 <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@moremakersadvisory.com">info@moremakersadvisory.com</a></p>
-<p><i class="fa fa-map-marker" aria-hidden="true"></i> Nashandi Buiding, B1 Road, Ondangwa.</p>
+<p><i class="fa fa-map-marker" aria-hidden="true"></i> Ondangwa, Namibia</p>
 
 
 <h4>Operating Hours</h4>
@@ -447,7 +424,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr>
  <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="Tel:+264 814861567">+264 81 486 1567</a></p>
 <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@moremakersadvisory.com">info@moremakersadvisory.com</a></p>
-<p><i class="fa fa-map-marker" aria-hidden="true"></i> P. O. Box, Namibia</p>
+<p><i class="fa fa-map-marker" aria-hidden="true"></i>Ondangwa, Namibia</p>
 
 
 
@@ -470,7 +447,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="footer-icons">
       
           </a>
-           <a href="https://x.com/MoremakersHQ?t=sqXEZ0MH8V2DSRrxTlLxZQ&s=08" target="blank">
+          <a href="https://x.com/MoremakersHQ?t=sqXEZ0MH8V2DSRrxTlLxZQ&s=08" target="blank">
             <i class="fa fa-twitter" aria-hidden="true" alt="Twitter Icon"></i>
           </a>
           <a href="https://wa.me/+264814861567" target="blank">
