@@ -1,0 +1,498 @@
+<?php
+$success = false;
+$error = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+  
+
+    // Email details
+    $to = "info@moremakersadvisory.co"; 
+    $subject = "New Subscription Form Submission";
+    $body = "Name: $name\nEmail: $email\nPhone: $phone";
+    $headers = "From: $email";
+
+    // Send email
+    if (mail($to, $subject, $body, $headers)) {
+        $success = true;
+    } else {
+        $error = "❌ There was a problem sending your message.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="content-language" content="en"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+    <meta name="language" content="English"/>
+    <meta property="og:url" content="https://moremakersadvisory.com"/>
+    <meta property="og:title" content="Moremakers Advisory"/>
+    <meta name="coverage" content="Worldwide"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Ambrosius Kandowa"/>
+    <meta name="keywords" content="Moremakers Advisory "/>
+    <meta charset="utf-8">
+    <meta name="rights" content="Moremakers Advisory"/>
+    <meta name="author" content="Ambrosius Kandowa"/>
+    <meta name="robots" content="index,follow"/>
+    <meta property="og:type" content="website" />
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit&display=swap">
+    <title>Moremakers Advisory - Data Analytics Services </title>
+
+     <link rel="icon" type="image/jpg" href="images/logo.png">
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+ 
+    <script src="js/smoothscroll.js/"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <link href="css/lightbox.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="main">
+    <div class="main">
+
+
+    <!--<div class="main-top">
+        <p>Email: <a href="mailTo:info@moremakersadvisory.com"> info@moremakersadvisory.com</a></p>
+        <p>Tel: <a href="Tel: +264 814861567">+264 81 486 1567</a></p>
+
+    </div>--><!--END OF MAIN TOP-->
+
+     <a href="#">   <div class="company-logo">
+
+<img src="images/logo.png" alt="Company logo">
+
+    </div> </a><!--END OF COMPANY LOGO-->
+
+      <input type="checkbox" id="check1">
+  <label for="check1" class="checkbtn1">
+     <i class="fa fa-bars" aria-hidden="true"></i>
+  </label>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#main" class="smoothscroll">Home</a></li>
+            <li><a href="#about-us" class="smoothscroll">About Us</a></li>
+            <li><a href="#index_why" class="smoothscroll">Services</a></li>
+            <li><a href="#our-project" class="smoothscroll">Clients</a></li>
+            <li><a href="#contact-us" class="smoothscroll">Contact</a></li>
+
+        </ul>
+
+    </nav><!--END OF NAV-->
+
+</div><!--END OF MAIN CLASS-->
+
+  <div class="main-content">
+
+    <div class="main-picture">
+        <img src="images/main2.png" alt="main picture">
+
+    </div><!--END OF MAIN PICTURE-->
+
+    <div class="main-background">
+
+    </div><!--END OF MAIN BACKGROUND-->
+
+   
+
+
+    </div><!--END OF MAIN CONTENT-->
+
+     <div class="main-content-inside">
+
+    <h2>Data</h2>
+    <h2>Analytics</h2>
+    <h2>Services</h2>
+
+
+    <p>We deliver professional data analytics services, unlocking insights for informed decision-making and business growth</p>
+
+    <hr>
+
+ <a href="#about-us" class="smoothscroll""><button>About us</button></a>
+
+
+
+    </div><!--END OF MAIN CONTENT INSIDE-->
+
+    <div class="main-contact-us">
+      <h3>Get in-touch:</h3>
+      <hr>
+
+             <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="Tel:+264 814861567">+264 81 486 1567</a></p>
+<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@moremakersadvisory.com">info@moremakersadvisory.com</a></p>
+<p><i class="fa fa-map-marker" aria-hidden="true"></i> Ondangwa, Namibia</p>
+    </div>
+
+</div><!--END OF MAIN DIV-->
+
+
+
+
+    <div id="wrapper">
+
+    <a href="https://wa.me/+264814861567" target="blank">
+        
+    
+   <div class="whatsapp">
+    <img src="images/whatsapp.png" alt="">
+   </div>    </a>
+
+        <div id="about-us">
+
+   <a href="#wrapper" class="smoothscroll">  
+  <div class="scroll">
+              
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              <span>Scroll-up</span>
+             
+              
+              </div>
+
+              </a>
+
+        <div class="about-us-top">
+
+      
+
+    
+    <div class="about-us-top-content">
+
+     <h1>About Moremakers Advisory </h1>
+         <hr>
+
+   
+        <p><strong>Moremakers Advisory </strong> is a research and analytics division of Moremakers Investment CC, focused on delivering accurate, evidence-based market research, economic insights, and business intelligence across Namibia and Southern Africa.</p>
+
+
+
+<p>We help decision-makers in both the private and public sectors make smarter choices through data-driven insights that inform strategy, policy, and performance.</p>
+
+<h3>Sectors We Serve:</h3>
+<ul>
+    <li>Retail</li>
+    <li>Energy & Utilities</li>
+    <li>Healthcare</li>
+    <li>Telecommunications</li>
+    <li>Automotive</li>
+    <li>Public Sector</li>
+</ul>
+
+ </div><!--END OF ABOUT US TO CONTENT-->
+
+   <div class="about-us-top-img">
+            <img src="images/main-picture.png" alt="">
+        </div>
+
+</div>
+
+        </div><!--END OF ABOUT US-->
+
+   
+       <div id="quality-control">
+    
+
+            <div class="mid-quality">
+              <div class="mid-quality-content research-area">
+                <h4>Research Area</h4>
+
+<ul>
+    <li>Market Research – Analyze consumer behavior, pricing trends, and competitor activity.</li>
+    <li>Political & Public Opinion Research – Capture views on leadership and governance.</li>
+    <li>Policy Research – Evaluate the effectiveness of public policies.</li>
+    <li>Economic Research – Study economic trends and resource allocation.</li>
+    <li>Healthcare Research – Assess patient satisfaction and service delivery.</li>
+    <li>Social Policy Research – Evaluate government and community program impacts.</li>
+    <li>Environmental & Climate Policy Research – Explore climate and sustainability policies.</li>
+    <li>Technology & Innovation Policy Research – Analyze technology’s role in development.</li>
+</ul>
+              </div>
+
+                <div class="mid-quality-content">
+                   <h4>Flagship Products</h4>
+    <ul>
+      <li>Customer Satisfaction Index – National and sectoral customer satisfaction rankings.</li>
+      <li>Voice of the Customer (VoC) – Real-time feedback tools for service improvement.</li>
+      <li>Customer Service Benchmarking Index – Compare service performance regionally.</li>
+      <li>Annual CEO & Managing Director Survey – Insights from business leaders on the economy.</li>
+    </ul>
+              </div>
+            </div>
+
+          
+
+          </div><!--END OF QUALITY CONTROL-->
+
+        
+          <div id="index_why">
+           
+            <h1>Our Core Services</h1>
+            <hr>
+            <img src="images/main3.png" alt="" class="why_img">
+            <div class="index_why">
+              <p>We provide specialized research services designed to help companies and institutions navigate markets, understand consumers, monitor competitors and evaluate policies.</p>
+              <ul>
+                <li>Price Surveys – Monitor product prices across markets and competitors.</li>
+                <li>Product Availability Checks – Identify stock shortages and supply gaps.</li>
+                <li>Competitor Price Monitoring – Track and analyze competitors’ pricing strategies.</li>
+                <li>Retail Insights – Collect in-store data on products and trends.</li>
+                <li>Market Entry Research – Provide intelligence to support expansion into new markets.</li>
+                <li>Custom Research – Design research tailored to your business needs.</li>
+              </ul>
+
+            </div><!--index_why-->
+          
+
+            <div id="index_why_right">
+              <div class="why_right">
+                <h3>Why Choose Us?</h3>
+
+                 <ul>
+                  <li>Deep understanding of local markets.</li>
+                     <li>Network of field researchers across Namibia.</li>
+                     <li>Experience across multiple sectors.</li>
+                     <li>Focus on accuracy, relevance, and impact.</li>
+                     <li>We deliver not just data, but actionable intelligence.</li>
+                </ul>
+
+              
+              </div><!--end of why_right-->
+
+              <div class="why_right">
+                <h3>Recent Published Articles</h3>
+
+                 <ul>
+                  <li><a href="#">First Article will go here.</a></li>
+                     
+                </ul>
+
+
+              </div><!--END OF INDEX WHY-->
+
+
+
+            
+        
+
+            </div><!--end of index_why_right-->
+
+          </div><!--END OF INDEX WHY DIV-->
+
+   
+
+           <div id="our-project">
+
+        <h3>Our Clients</h3>
+        <hr>
+
+        
+            
+
+        <div class="our-project-content">
+
+        <div class="wbsalt projects">
+                <img src="images/company/ok-food.jpg" alt="">
+          
+        
+
+            </div><!--END OF FTDUTOIT-->
+
+            <div class="ftdutoit  projects">
+                <img src="images/company/checkers.jpg" alt="">
+      
+
+            </div><!--END OF FTDUTOIT-->
+
+            <div class="westcoastindustrial projects">
+                <img src="images/company/shoprite.jpg" alt="">
+               
+    
+
+            </div><!--END OF WEST COAST INDUSTRIAL-->
+
+            <div class="admheavyhaullage projects">
+                <img src="images/company/choppies.jpg" alt="">
+           
+
+            </div><!--END OF ADM Heavy Haullage-->
+
+            
+            <div class="admheavyhaullage projects">
+                <img src="images/company/wb.jpg" alt="">
+               
+               
+            </div><!--END OF ADM Heavy Haullage-->
+   
+   
+    
+
+        </div><!--END OF OUR PROJECT CONTENT-->
+
+        </div><!--END OF OUR PROJECT-->
+
+
+      
+
+        <div id="contact-us">
+
+        <div class="behind-contact">
+
+        </div>
+            <div class="contact-details">
+
+            <h3>Get in Touch</h3>
+            <hr>
+
+            <p>Want to get in touch? We'd love to hear from you. Here is how you can reach us.</p>
+
+  
+
+    </div>
+
+    <div class="get-in-touch">
+      <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+264 814861567">+264 814861567</a></p>
+<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@moremakersadvisory.com">info@moremakersadvisory.com</a></p>
+<p><i class="fa fa-map-marker" aria-hidden="true"></i> Nashandi Buiding, B1 Road, Ondangwa.</p>
+
+
+<h4>Operating Hours</h4>
+<p>Monday - Friday</p>
+<p>08H00 - 17H00</p>
+
+
+<hr>
+
+</div><!--ENF OF GET IN TOUCH-->
+
+
+<div class="form-container">
+
+<p>Join Moremaker Advisory Market Research Panel. Join Now.</p>
+    <?php if ($success): ?>
+        <p class="success">✅ Your message has been sent!</p>
+    <?php elseif (!empty($error)): ?>
+        <p class="error"><?php echo $error; ?></p>
+    <?php endif; ?>
+
+    <form method="POST" action="">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number">
+       
+        <button type="submit">Submit</button>
+    </form>
+</div> <!--ENd OF FORM CONTAINER DIV-->
+
+            <!--<div class="location">
+
+       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10738.034598564425!2d15.970819723850994!3d-17.91028758179333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNashandi%20Building%2C%20Ondangwa.!5e0!3m2!1sen!2sna!4v1755091294759!5m2!1sen!2sna" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </div>-->
+
+        </div><!--END OF CONTACT US-->
+
+    </div><!--END OF WRAPPER-->
+
+    <footer>
+
+    <div class="footer-content">
+
+    <div class="footer-logo footer">
+<img src="images/footer-logo.png" alt="Company logo">
+
+<p>We deliver professional data analytics services, unlocking insights for informed decision-making and business growth. View our <a href="documents/company-profile.pdf" target="blank">Company profile</a></p>
+
+
+    </div>
+
+    <div class="footer-nav footer">
+
+   <!-- <h3>Quick Links</h3>
+    <hr>-->
+
+      <ul>
+            <li><a href="#main" class="smoothscroll">Home</a></li>
+            <li><a href="#about-us" class="smoothscroll">About Us</a></li>
+            <li><a href="#index_why" class="smoothscroll">Our Services</a></li>
+            <li><a href="#our-project" class="smoothscroll">Our Clients</a></li>
+                         <li><a href="#contact-us" class="smoothscroll">Contact</a></li>
+             
+          
+
+        </ul>
+
+    
+    </div>
+
+    <div class="footer-contact">
+
+    <h4>Contact us:</h4>
+    <hr>
+ <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="Tel:+264 814861567">+264 81 486 1567</a></p>
+<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@moremakersadvisory.com">info@moremakersadvisory.com</a></p>
+<p><i class="fa fa-map-marker" aria-hidden="true"></i> P. O. Box, Namibia</p>
+
+
+
+
+
+
+    </div><!--END OF FOOTER CONTACT-->
+
+       <div class="footer-social">
+
+        <h4>Operating Hours</h4>
+        <hr>
+
+<p>Monday - Friday</p>
+<p>08H00 - 17H00</p>
+
+
+     <h3>Lets Stay Connected:</h3>
+
+        <div class="footer-icons">
+      
+          </a>
+          <a href="https://twitter.com/jobs_namibia" target="blank">
+            <i class="fa fa-twitter" aria-hidden="true" alt="Twitter Icon"></i>
+          </a>
+          <a href="https://wa.me/+264814861567" target="blank">
+            <i class="fa fa-whatsapp" aria-hidden="true" alt="LinkedIn Icon"></i>
+          </a>
+      </div>
+
+     
+
+        </div>
+
+    </div><!--END OF FOOTER CONTENT-->
+
+   <div class="footer-bottom">
+
+        <p>  &copy 2025. Moremakers Advisory. All Right Reserved. </p>
+       <p>Another Site by <a href="https://www.instagram.com/kandowatech" target="blank">Kandowa Tech</a></p>
+
+    </div> <!--END OF FOOTER-->
+
+    </footer><!--END OF FOOTER-->
+
+  
+</body>
+</html>
